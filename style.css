@@ -1,0 +1,146 @@
+:root 
+{
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+
+
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+
+body {
+    margin: 0;
+    font-family: "Red Hat Display", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Paleblue);
+    padding: 6.4%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:first-child {
+    margin-top: 0;
+}
+
+* :last-child {
+    margin-bottom: 0;
+}
+
+.card {
+    max-width: 450px;
+    border-radius: 15px;
+    background-color: white;
+    text-align: center;
+    color: var(--Darkblue);
+}
+
+.card_img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    max-width: 100%;
+}
+
+.card_content {
+    padding: 3em 6%;
+}
+
+.card_title {
+    font-size: 1.9rem;
+}
+
+.card_body {
+    line-height: 1.6;
+    color: var(--Desaturatedblue);
+}
+
+.card_plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Verypaleblue);
+    padding: 1.625em;
+    border-radius: 18px;
+}
+
+.card_plan_txt_label {
+    margin-bottom: .5em;
+    font-weight: bold;
+}
+
+.card_plan_txt_val 
+{
+    margin-top: 0;
+    color: var(--Desaturatedblue);
+}
+
+.card_plan_btn
+{
+    background:none;
+    border:none;
+    text-decoration: underline;
+    color: var(--Brightblue);
+    font-weight: bold;
+    font-family: inherit;
+    transition: all 300ms;
+    cursor: pointer;
+}
+.card_plan_btn:hover
+{
+    filter:brightness(200%);
+}
+
+
+.card_btns {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1em;
+    margin-top: 1.5em;
+}
+
+.card_btn {
+    padding: .75em 1.5em;
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 300ms;
+    cursor: pointer;
+
+}
+
+.card_btn-blue {
+    background-color: var(--Brightblue);
+    color: white;
+    box-shadow: 0px 10px 10px hsla(245,75%, 52%, 30%);
+}
+
+.card_btn-blue:hover
+{
+    filter: brightness(200%);
+}
+
+.card_btn-white 
+{
+    background-color: transparent;
+    color: var(--Desaturatedblue);
+}
+
+.card_btn-white:hover
+{
+    color: var(--Darkblue);
+}
+
+@media (min-width: 786px)
+{
+    .card_content {
+        padding: 3.4em 11%;
+    }
+}
